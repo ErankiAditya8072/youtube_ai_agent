@@ -1,0 +1,11 @@
+# Ignore history file
+summary_history.json
+
+# Ignore system files
+__pycache__/
+*.pyc
+
+# Ignore virtual environment (if you use one)
+venv/
+env/
+.env
