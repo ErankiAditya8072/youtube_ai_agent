@@ -1,6 +1,7 @@
 import os
 import json
 import re
+from dotenv import load_dotenv
 import requests
 from groq import Groq
 from youtube_transcript_api import YouTubeTranscriptApi, TranscriptsDisabled, NoTranscriptFound
@@ -9,9 +10,12 @@ from datetime import datetime
 # ==========================================
 # ⚙️ CONFIGURATION
 # ==========================================
-GROQ_API_KEY = ""  # 🔴 PASTE YOUR GROQ API KEY HERE
-TELEGRAM_BOT_TOKEN = ""   # Paste Telegram_BOT_TOKEN From BotFather
-TELEGRAM_CHAT_ID = "" #PASTE telegram chat id
+
+load_dotenv()
+
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")  # 🔴 PASTE YOUR GROQ API KEY HERE
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")  # From BotFather
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 HISTORY_FILE = "summary_history.json"
 
 client = Groq(api_key=GROQ_API_KEY) if GROQ_API_KEY else None
