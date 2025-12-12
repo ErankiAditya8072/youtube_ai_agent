@@ -1,26 +1,26 @@
-# 📹 YouTube AI Note-Taker
+# YouTube AI Note-Taker
 
 A powerful AI agent that turns YouTube videos into detailed, time-stamped study notes. 
 
 Built with **Streamlit** and **Groq (Llama 3)**, this tool extracts transcripts, processes them using a sophisticated prompt to remove fluff, and generates a structured Markdown summary.
 
-## 🚀 Features
+##Features
 
-* **📝 Automated Note-Taking**: Converts video audio into high-quality, objective technical notes.
-* **⏱️ Smart Timestamps**: Automatically adds timestamps to section headers so you can jump to specific parts of the video.
-* **🚫 No Fluff**: The AI is prompted to remove meta-talk (e.g., "The speaker says...") and focus purely on the concepts.
-* **📚 Local History**: Saves your summaries automatically to a JSON file so you don't have to re-generate them.
-* **✈️ Telegram Integration**: Optionally sends the summary directly to your Telegram chat.
-* **📖 Dual View**: Switch between a beautiful rendered view and raw Markdown code.
+* **Automated Note-Taking**: Converts video audio into high-quality, objective technical notes.
+* **Smart Timestamps**: Automatically adds timestamps to section headers so you can jump to specific parts of the video.
+* **No Fluff**: The AI is prompted to remove meta-talk (e.g., "The speaker says...") and focus purely on the concepts.
+* **Local History**: Saves your summaries automatically to a JSON file so you don't have to re-generate them.
+* **Telegram Integration**: Optionally sends the summary directly to your Telegram chat.
+* **Dual View**: Switch between a beautiful rendered view and raw Markdown code.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Python 3.8+**
 * **Streamlit** (Frontend UI)
 * **Groq Cloud API** (LLM Power / Llama 3-70b)
 * **YouTube Transcript API** (Data extraction)
 
-## 📦 Installation
+## Installation
 
 1.  **Clone the repository**
     ```bash
@@ -43,7 +43,7 @@ Built with **Streamlit** and **Groq (Llama 3)**, this tool extracts transcripts,
     TELEGRAM_CHAT_ID = "..."        # Your Chat ID
     ```.
 
-## 🏃‍♂️ How to Run
+## How to Run
 
 Run the Streamlit app from your terminal:
 
